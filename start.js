@@ -6,6 +6,9 @@ const DISCORD_BOT_TOKEN = 'YOUR_DISCORD_BOT_TOKEN';
 const DISCORD_CHANNEL_ID = 'YOUR_DISCORD_CHANNEL_ID';
 const GITHUB_REPO_URL = 'https://github.com/USERNAME/REPO_NAME';
 
+let previousCommitSHA = null;
+
+
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
